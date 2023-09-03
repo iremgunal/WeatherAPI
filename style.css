@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-image: url('./image/bg.jpg');
+
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+}
+
+header h1 {
+    color: #1e9bf0;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+header #searchBar {
+    border: none;
+    font-family: monospace;
+    background: transparent;
+    width: 80%;
+    line-height: 40px;
+    font-size: 40px;
+    padding-left: 10px;
+    position: absolute;
+    top: 55%;
+    text-align: center;
+    transition: all ease-in .4s;
+    
+
+}
+
+header #searchBar:hover {
+    transform: scale(1.1);
+}
+
+header #searchBar::placeholder {
+    color: rgb(76, 73, 73);
+    font-size: 20px;
+    font-style: italic;
+    font-family: monospace;
+    opacity: 0.7;
+    text-align: center;
+
+}
+
+header #searchBar:focus {
+    outline: none;
+
+}
+
+.line {
+    border: 1px solid #115a8ab7;
+    border-radius: 10px;
+    width: 65%;
+    margin: 10px auto;
+    filter: blur(4px);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+section .city {
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+section .temp {
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+section .desc {
+    font-size: 35px;
+    font-style: italic;
+
+}
+
+section .minmax {
+    font-size: 40px;
+    font-weight: bolder;
+
+}
+
+.input-img {
+    transition: all ease-in-out 1s;
+}
+
+.input-img:hover {
+    transform: scale(1.1);
+}
